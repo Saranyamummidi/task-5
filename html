@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌟 Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>✨ Hi, I'm Saranya</h1>
+    <p>Frontend Developer | Creative Designer</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>💼 My Projects</h2>
+    <div class="card">
+      <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/ed8f032b-1ef8-4461-8243-03767e8bb02a/pixel-blog.jpg" alt="Project 1" loading="lazy">
+      <h3>Creative Blog</h3>
+      <p>A stylish blog with dark mode and dynamic search.</p>
+    </div>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.0zjKxJKxwkNaO-pAxYX9vQHaFJ?rs=1&pid=ImgDetMain" alt="Project 2" loading="lazy">
+      <h3>Design Portfolio</h3>
+      <p>Showcase of UI/UX projects and artboards.</p>
+    </div>
+  </section>
+
+  <section id="blog">
+  <h2>📝 Creative Blogs</h2>
+
+  <div class="blog-controls">
+    <input type="text" id="searchInput" placeholder="🔍 Search blog posts..." onkeyup="searchPosts()">
+    <div class="filters">
+      <button onclick="filterPosts('all')">All</button>
+      <button onclick="filterPosts('web')">Web</button>
+      <button onclick="filterPosts('design')">Design</button>
+      <button onclick="filterPosts('life')">Life</button>
+    </div>
+  </div>
+
+  <div class="blog-grid" id="blogGrid">
+    <!-- Blog Card Template -->
+    <div class="blog-card" data-category="web">
+      <img src="https://lipsglobal.com/wp-content/uploads/2024/05/DALL%C2%B7E-2024-05-11-17.45.33-A-stylish-and-professional-fashion-design-portfolio-layout-featuring-a-cover-page-with-bold-typography-and-signature-design-motifs-interior-pages-sh.webp" alt="Web Blog">
+      <div class="content">
+        <h3>Building a Stunning Portfolio</h3>
+        <p>Tips on designing a personal portfolio that stands out in the tech world.</p>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="design">
+      <img src="https://s3-alpha.figma.com/hub/file/3038593792/ecfa44a8-88e2-4d70-96ad-dd2a1c74d0d3-cover.png" alt="Design Blog">
+      <div class="content">
+        <h3>Choosing the Perfect Color Palette</h3>
+        <p>Color theory and tools for vibrant and accessible web design.</p>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="life">
+      <img src="https://i.etsystatic.com/45436968/r/il/dea47e/5644214966/il_1080xN.5644214966_s6th.jpg" alt="Life Blog">
+      <div class="content">
+        <h3>Morning Rituals for Creatives</h3>
+        <p>How to boost creativity by building intentional morning routines.</p>
+      </div>
+    </div>
+
+    <div class="blog-card" data-category="web">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.IXkrgnBUrkq6BcKD1tZ8-AHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain" alt="Web Blog">
+      <div class="content">
+        <h3>JavaScript Tips & Tricks</h3>
+        <p>Boost performance and write cleaner code with these JavaScript patterns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+    <div class="blog-gallery">
+      <div class="blog-card web">
+        <img src="https://www.wemla.co/wp-content/uploads/2019/08/DC2F260C-71DE-4AEE-9450-73D00E8DDA0F.jpeg"
+ alt="Web blog">
+        <h3>Building My First Website</h3>
+        <p>A journey from zero to deployment.</p>
+      </div>
+      <div class="blog-card design">
+        <img src="https://www.truemark.dev/static/91713f3abc6c9fa56f275b1be4e052f3/e5b16/ux-design-principles.jpg" alt="Design blog">
+        <h3>UI/UX Principles</h3>
+        <p>Designing with users in mind.</p>
+      </div>
+      <div class="blog-card life">
+        <img src="
+https://tse1.mm.bing.net/th/id/OIP.UkYjitV-AGC6ZqrTgORamgHaF7?rs=1&pid=ImgDetMain" alt="Life blog">
+        <h3>My Daily Workflow</h3>
+        <p>How I stay creative and productive.</p>
+      </div>
+      <div class="blog-card web">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.-HHfqZ3bGRsZbIh8uZVu2AHaD4?rs=1&pid=ImgDetMain" alt="JS blog">
+        <h3>Why I Love JavaScript</h3>
+        <p>Thoughts on the world’s most versatile language.</p>
+      </div>
+    </div>
+  </section>
+  <section id="design-portfolio" style="padding: 3rem; background: #f9f9fb;">
+  <h2 style="text-align:center; font-size: 2.5rem; margin-bottom: 2rem;">🎨 Design Portfolio</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+    
+    <div class="design-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.fnx18Vo4RQYvIB8gy20pGQHaH5?rs=1&pid=ImgDetMain" alt="UI Design" loading="lazy">
+      <div class="card-content">
+        <h3>Modern UI Kit</h3>
+        <p>Minimal and clean interface kit for mobile and web apps.</p>
+      </div>
+    </div>
+
+    <div class="design-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.F608Jwnn_0i6tvF5jKuSfwHaEK?o=7rm=3&rs=1&pid=ImgDetMain" alt="UX Design" loading="lazy">
+      <div class="card-content">
+        <h3>UX Prototypes</h3>
+        <p>Wireframes and interaction models for user-centered design.</p>
+      </div>
+    </div>
+
+    <div class="design-card">
+      <img src="https://cdn.dribbble.com/users/179092/screenshots/10815509/shot_2_4x.jpg" alt="Illustration Work" loading="lazy">
+      <div class="card-content">
+        <h3>Illustration Works</h3>
+        <p>Custom illustrations and branding visuals for clients.</p>
+      </div>
+    </div>
+``
+  </div>
+</section>
+
+
+
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Saranya's Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
